@@ -12,7 +12,7 @@ class EmailService(ABC):
         self._authenticate()
 
     @abstractmethod
-    def _authenticate(self, ):
+    def _authenticate(self):
         pass
 
     @abstractmethod

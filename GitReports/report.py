@@ -181,6 +181,10 @@ class ReportBuilder:
                     </div>
                 </div>
         """
-
+    
     def _unsubscribe(self) -> str:
+        """
+        Not implemented yet.
+        When api route is created to subscribe\unsubscribe from repos, this will redirect users to it
+        """
         return ""

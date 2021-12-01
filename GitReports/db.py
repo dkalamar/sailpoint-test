@@ -25,6 +25,10 @@ class DB(ABC):
 
 
 class TestDB(DB):
+    """
+    Generic "Database" that would be replaced by whichever storage system
+    is chosen to track subscriptions
+    """
     def _authenticate(self):
         pass
 
