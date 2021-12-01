@@ -41,4 +41,4 @@ class SendGrid(EmailService):
                        to_emails=recipients,
                        subject=subject,
                        html_content=body)
-        response = self.sg.send(message)
+        _ = self.sg.send(message)

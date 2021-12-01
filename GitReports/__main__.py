@@ -19,7 +19,7 @@ for ext, recipients in db.iter_repos():
         rb = ReportBuilder(repo)
         html = rb.build(cutoff=datetime.utcnow() - timedelta(days=7))
         logging.info(msg=f"Sending Report for {ext}")
-        mail.send(recipients, 'Test', html)
+        mail.send(recipients=recipients, subject='Test', body=html)
     except Exception as err:
         logging.error(str(err))
 

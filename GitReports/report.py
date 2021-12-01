@@ -7,8 +7,6 @@ from github.Repository import Repository
 
 from . import mappings
 
-pd.options.plotting.backend = "plotly"
-
 
 class ReportBuilder:
     def __init__(self, repo: Repository):
@@ -181,10 +179,10 @@ class ReportBuilder:
                     </div>
                 </div>
         """
-    
+
     def _unsubscribe(self) -> str:
         """
         Not implemented yet.
-        When api route is created to subscribe\unsubscribe from repos, this will redirect users to it
+        When api route is created to subscribe/unsubscribe from repos, this will redirect users to it
         """
         return ""
