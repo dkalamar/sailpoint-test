@@ -25,6 +25,12 @@ class TestMail(EmailService):
         pass
 
     def send(self, recipients: List[str], subject: str, body: str):
+        body = f"""
+        <!--
+            To: {'; '.join(recipients)}
+            Subject: {subject}
+        -->
+        """ + body
         with open('tmp/sample_build.html', 'w') as fp:
             fp.write(body)
 
